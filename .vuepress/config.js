@@ -14,7 +14,7 @@ module.exports = {
   // head标签
   head: [
     ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#007fff' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
@@ -51,10 +51,15 @@ module.exports = {
           //   text: 'Python',
           //   link: '/python/',
           // },
+          {
+            text: 'about',
+            link: '/resume/',
+          }
         ],
-        sidebar: {
-          '/Python/': genSidebarConfig('Python')
-        }
+        // 自动生成侧边栏
+        sidebar: 'auto',
+        // 显示更新时间的字样取布尔值控制是否显示
+        lastUpdated: '最后更新'
       }
     }
   },
@@ -72,22 +77,22 @@ module.exports = {
 }
 
 
-function genSidebarConfig (title) {
-  return [
-    {
-      title,
-      collapsable: false,
-      children: [
-        '',
-        'getting-started',
-        'basic-config',
-        'assets',
-        'markdown',
-        'using-vue',
-        'custom-themes',
-        'i18n',
-        'deploy'
-      ]
-    }
-  ]
-}
+// function genSidebarConfig (title) {
+//   return [
+//     {
+//       title,
+//       collapsable: false,
+//       children: [
+//         '',
+//         'getting-started',
+//         'basic-config',
+//         'assets',
+//         'markdown',
+//         'using-vue',
+//         'custom-themes',
+//         'i18n',
+//         'deploy'
+//       ]
+//     }
+//   ]
+// }
