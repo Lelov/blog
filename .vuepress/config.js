@@ -44,6 +44,7 @@ module.exports = {
               // { text: 'HTML', link: '/language/' },
               { text: 'Python', link: '/python/' },
               { text: 'webpack', link: '/webpack/' },
+              { text: 'Blockchain', link: '/Blockchain/' },
             ]
           },
           // 配置单个导航
