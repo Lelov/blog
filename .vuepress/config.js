@@ -8,9 +8,9 @@ module.exports = {
     }
   },
   // 输出目录
-  dest: 'blog',
+  dest: 'docs',
   // 访问路径
-  base: '/blog/',
+  base: '/docs/',
   // head标签
   head: [
     ['link', { rel: 'manifest', href: '/manifest.json' }],
